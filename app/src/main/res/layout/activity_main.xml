@@ -7,156 +7,16 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+
     tools:context="com.example.mengchen.piano.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        >
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="MengChen Piano for Android"
-            android:textSize="20dp"
-            android:textAlignment="center"
-            android:paddingTop="10dp" />
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tunes"
-            android:orientation="horizontal"
-            android:padding="8dp">
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="C"
-                android:id="@+id/t0_btn"
-                android:checked="true"
-                />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="C#"
-                android:id="@+id/t1_btn"
-                android:checked="false"
-                />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="D"
-                android:id="@+id/t2_btn"
-                android:checked="false"
-                 />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="D#"
-                android:id="@+id/t3_btn"
-                android:checked="false"
-                 />
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="E"
-                android:id="@+id/t4_btn"
-                android:checked="false"
-                 />
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="F"
-                android:id="@+id/t5_btn"
-                android:checked="false"
-                 />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="F#"
-                android:id="@+id/t6_btn"
-                android:checked="false"
-                 />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="G"
-                android:id="@+id/t7_btn"
-                android:checked="false"
-                />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="G#"
-                android:id="@+id/t8_btn"
-                android:checked="false"
-                />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="A"
-                android:id="@+id/t9_btn"
-                android:checked="false"
-                />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="A#"
-                android:id="@+id/t10_btn"
-                android:checked="false"
-                />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="B"
-                android:id="@+id/t11_btn"
-                android:checked="false"
-                />
-        </RadioGroup>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="录音"
-                android:id="@+id/record_btn"
-                />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="播放"
-                android:id="@+id/play_btn"
-                />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="发布"
-                android:id="@+id/upload_btn"
-                />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="探索"
-                android:id="@+id/explore_btn"
-                />
-        </LinearLayout>
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="160dp">
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -467,14 +327,16 @@
                         android:id="@+id/s56_btn"
 
                         />
+
                     <TextView
+                        android:id="@+id/textView2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="3"
+                        android:layout_gravity="bottom"
                         android:layout_marginBottom="5dp"
                         android:padding="0dp"
-                        android:layout_gravity="bottom"
-                        android:textAlignment="center"/>
+                        android:text="3"
+                        android:textAlignment="center" />
                 </FrameLayout>
                 <FrameLayout
                     android:layout_width="wrap_content"
@@ -586,7 +448,7 @@
 
             <com.example.mengchen.piano.utils.BlackLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="100dp">
 
                 <ImageView
                     android:layout_width="fill_parent"
